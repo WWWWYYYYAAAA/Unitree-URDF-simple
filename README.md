@@ -1,9 +1,7 @@
 # Unitree URDF for RL
 ## STL Tool
+### !!! *the urdf cylinder will make learning iteration slow* !!!
 use stl_tools.py to generate simple stl files
-
-!!! the urdf cylinder will make learning iteration slow !!!
-
 ```bash
 pip install numpy
 pip install numpy-stl
