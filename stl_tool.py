@@ -389,35 +389,35 @@ def create_cone_with_top_stl(filename, bottom_radius=0.5, top_radius=0.3, height
 if __name__ == "__main__":
     
     #cylinder
-    vertices3, faces3 = create_cylinder_stl("./stl/cylinder.stl", 
-                                             radius=0.053, 
-                                             height=0.02, 
-                                             num_segments=20)
+    vertices3, faces3 = create_cylinder_stl("./stl/g1_foot.stl", 
+                                             radius=0.0525, 
+                                             height=0.015, 
+                                             num_segments=30)
     #sphere
-    vertices_sph, faces_sph = create_sphere_stl("./stl/sphere_example.stl", 
-                                                  radius=0.5, 
-                                                  num_segments_vertical=12, 
-                                                  num_segments_horizontal=12)
+    # vertices_sph, faces_sph = create_sphere_stl("./stl/sphere_example.stl", 
+    #                                               radius=0.5, 
+    #                                               num_segments_vertical=12, 
+    #                                               num_segments_horizontal=12)
     
-    vertices_sph_lq, faces_sph_lq = create_sphere_stl("./stl/sphere_lq_example.stl", 
-                                                        radius=1.0, 
-                                                        num_segments_vertical=8, 
-                                                        num_segments_horizontal=8)
-    vertices_sph_hq, faces_sph_hq = create_sphere_stl("./stl/sphere_hq_example.stl", 
-                                                        radius=1.0, 
-                                                        num_segments_vertical=24, 
-                                                        num_segments_horizontal=24)
-    #cone
-    vertices_cone, faces_cone = create_cone_stl("./stl/cone_example.stl", 
-                                                 radius=0.5, 
-                                                 height=1.0, 
-                                                 num_segments=12)
-    #frustum
-    vertices_frustum, faces_frustum = create_cone_with_top_stl("./stl/frustum_example.stl", 
-                                                                bottom_radius=0.5, 
-                                                                top_radius=0.2, 
-                                                                height=1.0, 
-                                                                num_segments=12)
+    # vertices_sph_lq, faces_sph_lq = create_sphere_stl("./stl/sphere_lq_example.stl", 
+    #                                                     radius=1.0, 
+    #                                                     num_segments_vertical=8, 
+    #                                                     num_segments_horizontal=8)
+    # vertices_sph_hq, faces_sph_hq = create_sphere_stl("./stl/sphere_hq_example.stl", 
+    #                                                     radius=1.0, 
+    #                                                     num_segments_vertical=24, 
+    #                                                     num_segments_horizontal=24)
+    # #cone
+    # vertices_cone, faces_cone = create_cone_stl("./stl/cone_example.stl", 
+    #                                              radius=0.5, 
+    #                                              height=1.0, 
+    #                                              num_segments=12)
+    # #frustum
+    # vertices_frustum, faces_frustum = create_cone_with_top_stl("./stl/frustum_example.stl", 
+    #                                                             bottom_radius=0.5, 
+    #                                                             top_radius=0.2, 
+    #                                                             height=1.0, 
+    #                                                             num_segments=12)
     
     
     
